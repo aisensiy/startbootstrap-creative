@@ -73,6 +73,13 @@ gulp.task('copy', function() {
             '!node_modules/font-awesome/*.json'
         ])
         .pipe(gulp.dest('vendor/font-awesome'))
+
+    gulp.src(['vendor/**/*']).pipe(gulp.dest('build/vendor'));
+    gulp.src(['css/**/*']).pipe(gulp.dest('build/css'));
+    gulp.src(['js/**/*']).pipe(gulp.dest('build/js'));
+    gulp.src(['img/**/*']).pipe(gulp.dest('build/img'));
+    gulp.src(['index.html']).pipe(gulp.dest('build'));
+
 })
 
 // Run everything

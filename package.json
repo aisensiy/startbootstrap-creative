@@ -10,7 +10,7 @@
   "scripts": {
     "start": "./node_modules/gulp/bin/gulp.js dev",
     "build": "./node_modules/gulp/bin/gulp.js",
-    "serve": "./node_modules/serve/bin/serve.js --port 5000"
+    "serve": "./node_modules/serve/bin/serve.js -s build --port 5000"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
